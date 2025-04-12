@@ -1,7 +1,7 @@
 {
   "name": "fcc-learn-npm-package-json",
   "version": "1.0.0",
-  "description": "",
+  "description": "A project that helps understand how to use package.json with npm",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
