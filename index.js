@@ -1,7 +1,8 @@
-const http = require('http');
-const port = process.env.PORT || 3000;
+const express = require('express');
+const app = express();
 
-http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello from Node.js!\n');
-}).listen(port);
+app.get('/', (req, res) => {
+  res.send('Hello from Express!');
+});
+
+module.exports = app;
